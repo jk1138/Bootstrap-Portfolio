@@ -1,103 +1,122 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Bootstrap Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-     <!--the bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!--the bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html" id="logo">Jennifer Kim</a>
-                </div>
-             <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-             </ul>
-                                
-            </div>
-        </nav>
-                
-    </header>
-
-
+  
+  <nav class="navbar navbar-default" id="masthead">
     <div class="container">
-      <div id="main-container" class="container">
-        <div class="row-fluid">
-            <div class="col-lg-8 col-md-8 col-sm-12 col-sx-12">
-                <section class="main-section">
-                    <h1>Portfolio</h1>
-                    <div class="span 12">
-                    <div class="row-fluid">
-
-                        <div class="span 6">                       
-                        <div class="room">
-                            <img class="img-responsive" src="assets/images/room.jpg" height="196 " width="264" alt="room with chairs">
-                            <article>
-                                <h2>Interior Design Website</h2>
-                            </article>
-                        </div>    
-                        </div>
-                            
-                        <div class="span 6">
-                        <div class="makeup">
-                            <img class="img-responsive" src="assets/images/glossier.jpg" height="196"width="264" alt="makeup">
-                             <article>
-                                <h2>Cosmetic Website</h2>
-                            </article>
-                        </div>
-                        </div>
-                            
-                        <div class="orangecover">
-                            <img class="img-responsive" src="assets/images/orangecover.jpg" height="196" width="264" alt="orange magazine cover">
-                                <article>
-                                    <h2>Digital Magazine-CAPITAL 60</h2>
-                                </article>
-                        </div>
-                            
-                        <div class="pinkcover">
-                            <img class="img-responsive" src="assets/images/pinkcover.jpg" height="196" width="264" alt="pink magazine cover">
-                                <article>
-                                    <h2>Digital Magazine-CAPITAL 60</h2>
-                                </article>
-                        </div>
-                            
-                            
-                        <div class="quora">
-                            <img class="img-responsive" src="assets/images/quora.jpg" height="196" width="264" alt="quora homepage">
-                                <article>
-                                    <h2>Cloned Quora's Webpage</h2>
-                                 </article>
-                        </div>
-
-                    </div> 
-                    </div>   
-                </section>  
-            </div>        
-        </div>            
-      </div> 
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" id="logo">Jennifer Kim</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav  navbar-right" id="navbar-links">
+          <li><a href="index.html" id="no-border-about">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+</nav>
 
-    <footer>
-        <div id="footer-content">
-            Copyright &copy;
+<div class="container">
+<!--MAIN 1  -->
+  <div class="row">
+    <div class="col-md-8 main-section">
+      <h1>Portfolio</h1>
+
+        <!-- SUBROW 1   -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <a href="..." target="...">
+                        <img class="img-responsive" src="assets/images/room.jpg" height="196 " width="264" alt="room with chairs">
+                        <div class="caption">
+                            <h3>Interior Design Website</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4"> 
+                <div class="col-sm-12 thumbnail text-center">
+                    <a href="..." target="...">
+                        <img class="img-responsive" src="assets/images/glossier.jpg" height="196"width="264" alt="makeup">
+                        <div class="caption">
+                            <h3>Cosmetic Website</h3>
+                         </div>
+                    </a>
+                </div>
+            </div>    
         </div>
-    </footer>
+        <!--    SUBROW 2  -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <a href="..." target="...">
+                        <img class="img-responsive" src="assets/images/orangecover.jpg" height="196" width="264" alt="orange magazine cover">
+                        <div class="caption">
+                            <h3>Digital Magazine-CAPITAL 60</h3>
+                        </div>
+                     </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <a href="..." target="...">
+                        <img class="img-responsive" src="assets/images/pinkcover.jpg" height="196" width="264" alt="pink magazine cover">
+                        <div class="caption">
+                            <h3>Digital Magazine-CAPITAL 60</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--   SUBROW 3   -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="col-sm-12 thumbnail text-center">
+                    <a href="..." target="...">
+                        <img class="img-responsive" src="assets/images/quora.jpg" height="196" width="264" alt="quora homepage">
+                        <div class="caption">
+                            <h3>Cloned Quora's Webpage</h3>
+                        </div>
+                    </a>    
+                </div>    
+            </div>
+        </div> 
 
-</body>
+        <div class="col-offset-1"></div>
+    </div>
+</div>
+                        
+                    
+<!--FOOTER  -->
+<div class="container-fluid footer-section">
+    <div class="row">
+        <p> Copyright &copy;
+    </div>
+</div>
+                    
+    <!-- collapsing navbar -->         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>                  
 </html>
