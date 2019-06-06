@@ -1,6 +1,6 @@
 /** TEXT **/
 
-h1 {
+#nametag {
     font-family:Georgia, Times, Times New Roman, serif;
     font-weight: bold;
     font-size: 28px;
@@ -9,7 +9,7 @@ h1 {
     margin: 0 auto;
 }
 
-h2 {
+h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 26px;
@@ -218,7 +218,7 @@ article {
     z-index: 1;
 }
 
-h3 {
+h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     color: #ffffff;
