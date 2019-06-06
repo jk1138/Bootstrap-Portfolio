@@ -1,76 +1,78 @@
 ﻿<!DOCTYPE html>
-<html lang="en-us">
 
+<html lang="en-us">
+  
 <head>
-    <meta charset="utf-8" />
-    <title>Bootstrap Contact Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Contact</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <!--the bootstrap CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!--the bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                     <a class="navbar-brand" href="index.html" id="logo">Jennifer Kim</a>
-                </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-                                            
+    <nav class="navbar navbar-default" id="masthead">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" id="logo">Jennifer Kim</a>
             </div>
-        </nav>
-                            
-    </header>
-                
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav  navbar-right" id="navbar-links">
+                    <li><a href="index.html" id="no-border-about">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
 
     <div class="container">
-        <section id="form">
-          <div class= "row">
-            <div class="col-lg-8 col-md-8 col-sm-12 col-sx-12">
-                <h1 class="padding"> Contact </h1>
-                <hr class="top_line">
-                <form action="">
-                    <fieldset>
-                        <legend></legend>
-                        <label for="name">Name</label>
-                        <br>
-                        <input type="text" id="name" name="fullname" placeholder="John Smith">
-                        <br>
-                        <label for="email">Email</label>
-                        <br>
-                        <input type="email" id="email" name="fullemail" placeholder="example@gmail.com" required>
-                        <br>
-                        <label for="message">Message</label>
-                        <br>
-                        <input type="textarea" id="message">
-                        <br>
-                        <input type="submit">
-                    </fieldset>
-                </form>
-            </div>    
-          </div> 
-            
-        </section>
-    </div>
 
-    <footer>
-        <div id="footer-content">
-            Copyright &copy;
+        <div class="col-md-8 main-section">
+            <h1>Contact</h1>
+    
+            <form>
+                <div class="form-group" id="contact-form">
+                    <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required="required"></textarea>
+                </div>
+          
+                <button type="submit" class="btn btn-default" id="submit-button">Submit</button>
+
+            </form>
         </div>
-    </footer>
-
+    </div>
+<!-- FOOTER -->
+    <div class="container-fluid footer-section">
+        <div class="row">
+          <p>&copy; Copyright 2018 Jennifer Kim</p>
+        </div>
+    </div>
+      
+<!--  JS collapsing navbar  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
 </body>
-</html>
+</html>        
